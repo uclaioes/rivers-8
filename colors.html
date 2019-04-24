@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Santa Monica Mountains Colors</title>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <style type="text/css">
+
+    body {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 15vh 1fr;
+      margin: 2vw;
+    }
+
+    @media (min-width: 48em) {
+      body {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (min-width: 77em) {
+      body {
+        grid-template-columns: repeat(8, 1fr);
+      }
+    }
+
+    header {
+      grid-column: 1 / -1;
+      grid-row: 1;
+    }
+
+    .swatch {
+      align-items: center;
+      border-bottom: 1px solid #000;
+      display: grid;
+      grid-gap: 5px;
+      grid-template-areas:
+        "swatch"
+        "values";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin-bottom: 1em;
+    }
+
+    .swatch:last-child {
+      border-bottom: 0;
+    }
+
+    .swatch > div:first-child {
+      border: 10px solid hsla(24, 17%, 83%, 0.5);
+      border-radius: 50%;
+      grid-area: swatch;
+      height: 75px;
+      justify-self: left;
+      width: 75px;
+    }
+
+    .swatch div:last-child {
+      font-size: var(--font-size-x-small);
+      grid-area: values;
+      height: 100px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+        <nav>
+            <ul>
+              <li><a href="index.html"><img class="icon-github" src="icons/smart-house.svg" alt="Home icon" title="Go to home page"></a>
+             </li>
+           </ul> 
+        </nav>
+      <h1>Colors</h1>
+    </header>
+  
+    <section class="palette">
+      <h3>Saddle</h3>
+      <div class="swatch">
+        <div style="background: var(--color-saddle-darker);"></div>
+        <div>
+          <p><b>Hex: </b>#0F0605<br>
+            <b>HSL: </b>6° 50% 4%<br>
+            <b>RGB: </b>15 6 5 <br>
+           <b>Token:</b> --color-saddle-darker</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-saddle-dark);"></div>
+        <div>
+          <p><b>Hex: </b>#261713<br>
+            <b>HSL: </b>13° 34% 11%<br>
+            <b>RGB: </b>38 23 19
+            <br>
+            <b>Token:</b> --color-saddle-dark</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-saddle);"></div>
+        <div>
+          <p><b>Hex: </b>#624C46<br>
+            <b>HSL: </b>13° 17% 33%)<br>
+            <b>RGB: </b>98 76 70<br>
+            <b>Token:</b> --color-saddle</p>
+         
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-saddle-light);"></div>
+        <div>
+          <p><b>Hex: </b>#9F827A<br>
+            <b>HSL: </b>13° 16% 55%<br>
+            <b>RGB: </b>159 130 122<br>
+            <b>Token:</b> --color-saddle-light</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-saddle-lighter);"></div>
+        <div>
+          <p><b>Hex: </b>#C3A59D<br>
+            <b>HSL: </b>13° 24% 69%<br>
+            <b>RGB: </b>195 165 157<br>
+            <b>Token:</b> --color-saddle-lighter</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="palette">
+      <h3>Celery</h3>
+      <div class="swatch">
+        <div style="background: var(--color-celery-darker);"></div>
+        <div>
+          <p><b>Hex: </b>#528500<br>
+            <b>HSL: </b>83° 100% 26%<br>
+            <b>RGB: </b>82 133 0<br>
+            <b>Token:</b> --color-celery-darker</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-celery-dark);"></div>
+        <div>
+          <p> <b>Hex: </b>#78A300<br>
+            <b>HSL: </b>76° 100% 32%<br>
+            <b>RGB: </b>120 163 0<br>
+            <b>Token:</b> --color-celery-dark</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-celery);"></div>
+        <div>
+          <p> <b>Hex: </b>#B0CD47<br>
+            <b>HSL: </b>73° 57% 54%<br>
+            <b>RGB: </b>176 205 71<br>
+            <b>Token:</b> --color-celery</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-celery-light);"></div>
+        <div>
+          <p> <b>Hex: </b>#E8F68E<br>
+            <b>HSL: </b>68° 85% 76%<br>
+            <b>RGB: </b>232 246 142<br>
+            <b>Token:</b> --color-celery-light</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-celery-lighter);"></div>
+        <div>
+          <p><b>Hex: </b>#F6FDB4<br>
+            <b>HSL: </b>66° 95% 85%<br>
+            <b>RGB: </b>246 253 180<br>
+            <b>Token:</b> --color-celery-lighter</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="palette">
+      <h3>Dell</h3>
+      <div class="swatch">
+        <div style="background: var(--color-dell-darker);"></div>
+        <div>
+          <p> <b>Hex: </b>#020F01<br>
+            <b>HSL: </b>113° 90% 3%<br>
+            <b>RGB: </b>2 15 1<br>
+            <b>Token:</b> --color-dell-darker</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-dell-dark);"></div>
+        <div>
+          <p> <b>Hex: </b>#0C2707<br>
+            <b>HSL: </b>111° 70% 9%<br>
+            <b>RGB: </b>12 39 7<br>
+            <b>Token:</b> --color-dell-dark</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-dell);"></div>
+        <div>
+          <p> <b>Hex: </b>#406732<br>
+            <b>HSL: </b>104° 35% 30%<br>
+            <b>RGB: </b>64 103 50<br>
+            <b>Token:</b> --color-dell</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-dell-light);"></div>
+        <div>
+          <p><b>Hex: </b>#74A35C<br>
+            <b>HSL: </b>100° 28% 50%<br>
+            <b>RGB: </b>116 163 92<br>
+            <b>Token:</b> --color-dell-light</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-dell-lighter);"></div>
+        <div>
+          <p> <b>Hex: </b>#98C97E<br>
+            <b>HSL: </b>99° 41% 64%<br>
+            <b>RGB: </b>152 201 126<br>
+            <b>Token:</b> --color-dell-lighter</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <section class="palette">
+      <h3>Fawn</h3>
+      <div class="swatch">
+        <div style="background: var(--color-fawn-darker);"></div>
+        <div>
+          <p> <b>Hex: </b>#BD4800<br>
+            <b>HSL: </b>23° 100% 37%<br>
+            <b>RGB: </b>189 72 0<br>
+            <b>Token:</b> --color-fawn-darker</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-fawn-dark);"></div>
+        <div>
+          <p><b>Hex: </b>#D37012<br>
+            <b>HSL: </b>29° 84% 45%<br>
+            <b>RGB: </b>211 112 18<br>
+            <b>Token:</b> --color-fawn-dark</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-fawn);"></div>
+        <div>
+          <p><b>Hex: </b>#EAAA61<br>
+            <b>HSL: </b>32° 77% 65%<br>
+            <b>RGB: </b>234 170 97<br>
+            <b>Token:</b> --color-fawn</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-fawn-light);"></div>
+        <div>
+          <p><b>Hex: </b>#FFE2A3<br>
+            <b>HSL: </b>41° 100% 82%<br>
+            <b>RGB: </b>255 226 163<br>
+            <b>Token:</b> --color-fawn-light</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-fawn-lighter);"></div>
+        <div>
+          <p><b>Hex: </b>#FFF6CC<br>
+            <b>HSL: </b>49° 100% 90%<br>
+            <b>RGB: </b>255 246 204<br>
+            <b>Token:</b> --color-fawn-lighter</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="palette">
+        <h3>Bleu de France</h3>
+        <div class="swatch">
+          <div style="background: var(--color-bleu-de-france-darker);"></div>
+          <div>
+            <p><b>Hex: </b>#0028AD<br>
+              <b>HSL: </b>226° 100% 34%<br>
+              <b>RGB: </b>0 40 173<br>
+              <b>Token:</b> --color-bleu-de-france-darker</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-bleu-de-france-dark);"></div>
+          <div>
+            <p> <b>Hex:</b>  #0050C7<br>
+              <b>HSL: </b>216° 100% 39%<br>
+              <b>RGB: </b> 0 80 199<br>
+              <b>Token:</b> --color-bleu-de-france-dark</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-bleu-de-france);"></div>
+          <div>
+            <p><b>Hex: #1F93E5</b><br>
+              <b>HSL: </b>205° 79% 51%<br>
+              <b>RGB: </b>31 147 229<br>
+              <b>Token:</b> --color-bleu-de-france</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-bleu-de-france-light);"></div>
+          <div>
+            <p><b>Hex: </b>#57D2FF<br>
+              <b>HSL: </b>196° 100% 67%<br>
+              <b>RGB: </b>87 210 255<br>
+              <b>Token:</b> --color-bleu-de-france-light</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-bleu-de-france-lighter);"></div>
+          <div>
+            <p><b>Hex: </b>#80ECFF<br>
+              <b>HSL: </b>189° 100% 75%<br>
+              <b>RGB: </b>128 236 255<br>
+              <b>Token:</b> --color-bleu-de-france-lighter</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    <section class="palette">
+      <h3>Picton Blue</h3>
+      <div class="swatch">
+        <div style="background: var(--color-picton-blue-darker);"></div>
+        <div>
+          <p><b>Hex: </b>#0068F0<br>
+            <b>HSL: </b>214° 100% 47%<br>
+            <b>RGB: </b>0 104 240<br>
+            <b>Token:</b> --color-picton-blue-darker</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-picton-blue-dark);"></div>
+        <div>
+          <p> <b>Hex: </b>#008BF5<br>
+            <b>HSL: </b>206° 100% 48%<br>
+            <b>RGB: </b> 0 139 245<br>
+            <b>Token:</b> --color-picton-blue-dark</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-picton-blue);"></div>
+        <div>
+          <p><b>Hex: </b><br>
+            <b>HSL: </b>201° 97% 65%<br>
+            <b>RGB: </b><br>
+            <b>Token:</b> --color-picton-blue</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-picton-blue-light);"></div>
+        <div>
+          <p><b>Hex: </b>#4FC0FC<br>
+            <b>HSL: </b>189° 100% 80%<br>
+            <b>RGB: </b>79 192 252<br>
+            <b>Token:</b> --color-picton-blue-light</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-picton-blue-lighter);"></div>
+        <div>
+          <p><b>Hex: </b>#C2FCFF<br>
+            <b>HSL: </b>183° 100% 88%<br>
+            <b>RGB: </b>194 252 255<br>
+            <b>Token:</b> --color-picton-blue-lighter</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="palette">
+        <h3>Summer Sky</h3>
+        <div class="swatch">
+          <div style="background: var(--color-summer-sky-darker);"></div>
+          <div>
+            <p><b>Hex: </b>#0045AD<br>
+              <b>HSL: </b>216° 100% 34%<br>
+              <b>RGB: </b>0 69 173<br>
+              <b>Token:</b> --color-summer-sky-darker</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-summer-sky-dark);"></div>
+          <div>
+            <p> <b>Hex: </b>#006DC7<br>
+              <b>HSL: </b>207° 100% 39%<br>
+              <b>RGB: </b>0 109 199<br>
+              <b>Token:</b> --color-summer-sky-dark</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-summer-sky);"></div>
+          <div>
+            <p><b>Hex: </b>#3BA8E3<br>
+              <b>HSL: </b>201° 75% 56%<br>
+              <b>RGB: </b>59 168 227<br>
+              <b>Token:</b> --color-summer-sky</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-summer-sky-light);"></div>
+          <div>
+            <p><b>Hex: </b>#7CE2FE<br>
+              <b>HSL: </b>193° 98% 74%<br>
+              <b>RGB: </b>124 226 254<br>
+              <b>Token:</b> --color-summer-sky-light</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-summer-sky-lighter);"></div>
+          <div>
+            <p><b>Hex: </b>#A8F6FF<br>
+              <b>HSL: </b>186° 100% 83%<br>
+              <b>RGB: </b>168 246 255<br>
+              <b>Token:</b> --color-summer-sky-lighter</p>
+          </div>
+        </div>
+      </section>
+
+    
+
+    <section class="palette">
+      <h3>Waikawa Gray</h3>
+      <div class="swatch">
+        <div style="background: var(--color-waikawa-gray-darker);"></div>
+        <div>
+          <p><b>Hex: </b>#0D162B<br>
+            <b>HSL: </b>222° 54% 11%<br>
+            <b>RGB: </b>13 22 43<br>
+            <b>Token:</b> --color-waikawa-gray-darker</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-waikawa-gray-dark);"></div>
+        <div>
+          <p><b>Hex: </b>#253350<br>
+            <b>HSL: </b>220° 37% 23%<br>
+            <b>RGB: </b> 37 51 80<br>
+            <b>Token:</b> --color-waikawa-gray-dark</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-waikawa-gray);"></div>
+        <div>
+          <p><b>Hex: </b>#61718F<br>
+            <b>HSL: </b>216° 19% 47%<br>
+            <b>RGB: </b>97 113 143<br>
+            <b>Token:</b> --color-waikawa-gray</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-waikawa-gray-light);"></div>
+        <div>
+          <p><b>Hex: </b>#9CB3CE<br>
+            <b>HSL: </b>213° 34% 71%<br>
+            <b>RGB: </b>156 179 206<br>
+            <b>Token:</b> --color-waikawa-gray-light</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-waikawa-gray-lighter);"></div>
+        <div>
+          <p><b>Hex: </b>#C3D5EA<br>
+            <b>HSL: </b>212° 48% 84%<br>
+            <b>RGB: </b>195 213 234<br>
+            <b>Token:</b> --color-waikawa-gray-lighter</p>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="palette">
+      <h3>Lavender</h3>
+      <div class="swatch">
+        <div style="background: var(--color-perfume-darker);"></div>
+        <div>
+          <p><b>Hex: </b>#723EB1<br>
+            <b>HSL: </b>267° 48% 47%<br>
+            <b>RGB: </b>114 62 177<br>
+            <b>Token:</b> --color-perfume-darker</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-perfume-dark);"></div>
+        <div>
+          <p><b>Hex: </b>#9468CA<br>
+            <b>HSL: </b>267° 48% 60%<br>
+            <b>RGB: </b>148 104 202<br>
+            <b>Token:</b> --color-perfume-dark</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-perfume);"></div>
+        <div>
+          <p><b>Hex: </b>#C2A8E1<br>
+            <b>HSL: </b>267° 48% 77%<br>
+            <b>RGB: </b>194 168 225<br>
+            <b>Token:</b> --color-perfume</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-perfume-light);"></div>
+        <div>
+          <p> <b>Hex: </b>#E4D9F2<br>
+            <b>HSL: </b>267° 48% 90%<br>
+            <b>RGB: </b>228 217 242<br>
+            <b>Token:</b> --color-perfume-light</p>
+        </div>
+      </div>
+      <div class="swatch">
+        <div style="background: var(--color-perfume-lighter);"></div>
+        <div>
+          <p> <b>Hex: </b>#FAF7FC<br>
+            <b>HSL: </b>267° 48% 98%<br>
+            <b>RGB: </b>250 247 252<br>
+            <b>Token:</b> --color-perfume-lighter</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="palette">
+        <h3>Hippie Pink</h3>
+        <div class="swatch">
+          <div style="background: var(--color-hippie-pink-darker);"></div>
+          <div>
+            <p><b>Hex: </b>#520007<br>
+              <b>HSL: </b>355° 100% 16%<br>
+              <b>RGB: </b>82 0 7<br>
+              <b>Token:</b> --color-hippie-pink-darker</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-hippie-pink-dark);"></div>
+          <div>
+            <p><b>Hex: </b>#7A001B<br>
+              <b>HSL: </b>347° 100% 24%<br>
+              <b>RGB: </b>122 0 27<br>
+              <b>Token:</b> --color-hippie-pink-dark</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-hippie-pink);"></div>
+          <div>
+            <p><b>Hex: </b>#B63A57<br>
+              <b>HSL: </b>346° 52% 47%<br>
+              <b>RGB: </b>182 58 87<br>
+              <b>Token:</b> --color-hippie-pink</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-hippie-pink-light);"></div>
+          <div>
+            <p> <b>Hex: </b>#F16A90<br>
+              <b>HSL: </b>343° 83% 68%<br>
+              <b>RGB: </b>241 106 144<br>
+              <b>Token:</b> --color-hippie-pink-light</p>
+          </div>
+        </div>
+        <div class="swatch">
+          <div style="background: var(--color-hippie-pink-lighter);"></div>
+          <div>
+            <p> <b>Hex: </b>#FF99BB<br>
+              <b>HSL: </b>340° 100% 80%<br>
+              <b>RGB: </b>255 153 187<br>
+              <b>Token:</b> --color-hippie-pink-lighter</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="palette">
+          <h3>Carnation Pink</h3>
+          <div class="swatch">
+            <div style="background: var(--color-carnation-pink-darker);"></div>
+            <div>
+              <p><b>Hex: </b>#FF42F2<br>
+                <b>HSL: </b>340° 100% 63%<br>
+                <b>RGB: </b>255 66 242<br>
+                <b>Token:</b> --color-carnation-pink-darker</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: var(--color-carnation-pink-dark);"></div>
+            <div>
+              <p><b>Hex: </b>#FF70A5<br>
+                <b>HSL: </b>338° 100% 72%<br>
+                <b>RGB: </b>255 112 165<br>
+                <b>Token:</b> --color-carnation-pink-dark</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: var(--color-carnation-pink);"></div>
+            <div>
+              <p><b>Hex: </b>#FFADCE<br>
+                <b>HSL: </b>336° 100% 84%<br>
+                <b>RGB: </b>255 173 206<br>
+                <b>Token:</b> --color-carnation-pink</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: var(--color-carnation-pink-light);"></div>
+            <div>
+              <p> <b>Hex: </b>#FFE6F6<br>
+                <b>HSL: </b>322° 100% 95%<br>
+                <b>RGB: </b>255 230 246<br>
+                <b>Token:</b> --color-carnation-pink-light</p>
+            </div>
+          </div>
+          <div class="swatch">
+            <div style="background: var(--color-carnation-pink-lighter);"></div>
+            <div>
+              <p> <b>Hex: </b>#FFF5FD<br>
+                <b>HSL: </b>311° 100% 98%<br>
+                <b>RGB: </b>255 245 253<br>
+                <b>Token:</b> --color-carnation-pink-lighter</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="palette">
+            <h3>Azalea</h3>
+            <div class="swatch">
+              <div style="background: var(--color-azalea-darker);"></div>
+              <div>
+                <p><b>Hex: </b>#FF6169<br>
+                  <b>HSL: </b>357° 100% 69%<br>
+                  <b>RGB: </b>255 97 105<br>
+                  <b>Token:</b> --color-azalea-darker</p>
+              </div>
+            </div>
+            <div class="swatch">
+              <div style="background: var(--color-azalea-dark);"></div>
+              <div>
+                <p><b>Hex: </b>#FF6169<br>
+                  <b>HSL: </b>357° 100% 69%<br>
+                  <b>RGB: </b>255 97 105<br>
+                  <b>Token:</b> --color-azalea-dark</p>
+              </div>
+            </div>
+            <div class="swatch">
+              <div style="background: var(--color-azalea);"></div>
+              <div>
+                <p><b>Hex: </b>#FFBDBF<br>
+                  <b>HSL: </b>358° 100% 87%<br>
+                  <b>RGB: </b>255 189 191<br>
+                  <b>Token:</b> --color-azalea</p>
+              </div>
+            </div>
+            <div class="swatch">
+              <div style="background: var(--color-azalea-light);"></div>
+              <div>
+                <p> <b>Hex: </b>#FFF0F0<br>
+                  <b>HSL: </b>359° 100% 97%<br>
+                  <b>RGB: </b>255 240 240<br>
+                  <b>Token:</b> --color-azalea-light</p>
+              </div>
+            </div>
+            <div class="swatch">
+              <div style="background: var(--color-azalea-lighter);"></div>
+              <div>
+                <p> <b>Hex: </b>#FFFAFA<br>
+                  <b>HSL: </b>359° 84% 99%<br>
+                  <b>RGB: </b>255 250 250<br>
+                  <b>Token:</b> --color-azalea-lighter</p>
+              </div>
+            </div>
+          </section>
+
+
+  </body>
+
+</html>
