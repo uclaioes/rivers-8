@@ -29,18 +29,18 @@ body {
     "footer";
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: var(--spacing-large) auto;
-  max-width: 80vw;
   
 }
 
 @media (min-width: 30em) {
   body {
+    grid-gap: 2vw;
     grid-template-areas:
       "header header"
       "main aside"
       "footer footer";
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    max-width: 60vw;
+    grid-template-columns: 3fr 1fr;
+    max-width: 70vw;
   }
 }
 
