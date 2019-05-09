@@ -22,6 +22,7 @@ body {
   font-weight: var(--font-weight);
   line-height: var(--line-height-text);
   display: grid;
+  grid-gap: 1vw;
   grid-template-areas:
     "header"
     "main"
@@ -48,6 +49,7 @@ body {
 
 header {
   grid-area: header;
+  border-bottom: 1px solid var(--ucla-darker-blue);
 }
 
 main {
@@ -59,9 +61,8 @@ aside {
 }
 
 footer {
-  border-top: var(--border-width-hairline) solid var(--color-border-separator);
+  border-top: 1px solid var(--ucla-darker-blue);
   grid-area: footer;
-  margin-top: var(--spacing-medium);
 }
 
 h1 {
@@ -69,17 +70,11 @@ h1 {
   font-size: var(--font-size-xxx-display);
   font-weight: var(--font-weight-black);
   line-height: var(--line-height-heading);
-  margin-bottom: 0;
-  margin-top: 0;
 }
 
 header h1 {
   font-family: var(--font-family);
   font-size: var(--font-size-xxx-display);
-}
-
-header {
-  margin-bottom: var(--spacing-x-large);
 }
 
 article h2 {
@@ -92,7 +87,7 @@ article h2 {
 
 section h2 {
   font-size: var(--font-size-xxx-large);
-  font-weight: 900;
+  font-weight: var(--font-weight-black);
 }
 
 article .standfirst {
@@ -152,19 +147,13 @@ nav .selected {
 
 
 
-.columns {
-  column-count: 2;
-  column-gap: var(--spacing-large);
-  margin: var(--spacing-large) 0;
+.list-interviews {
+  display: grid;
+  grid-gap: 2vw;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
-@media (min-width: 64em) {
-  .columns {
-    column-count: 3;
-    column-gap: var(--spacing-x-large);
-  }
-}
-
-.columns p {
-  margin-top: 0;
+.list-interviews img {
+  object-fit: cover;
+  width: 100%;
 }
