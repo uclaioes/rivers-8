@@ -36,11 +36,12 @@ body {
   body {
     grid-gap: 2vw;
     grid-template-areas:
-      "header header"
-      "main aside"
+      "header aside"
+      "main main"
       "footer footer";
     grid-template-columns: 3fr 1fr;
-    max-width: 70vw;
+    margin: var(--spacing-large) auto;
+    
   }
 }
 
@@ -51,6 +52,12 @@ header {
 main {
   grid-area: main;
 }
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 
 aside {
   grid-area: aside;
@@ -97,6 +104,7 @@ section h2 {
   font-size: var(--font-size-x-large);
 }
 
+
 @media (min-width: 30em) {
   .standfirst {
     font-size: var(--font-size-xxx-large);
@@ -113,6 +121,11 @@ ol {
 
 nav ul {
   list-style: none;
+}
+
+nav .selected {
+  font-weight: 700;
+  color: var(--ucla-magenta);
 }
 
 .avatar {
