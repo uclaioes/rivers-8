@@ -47,9 +47,29 @@ body {
   }
 }
 
+@media (min-width: 30em) {
+  body.interview {
+    grid-template-areas:
+      "header header"
+      "photo photo"
+      ". main"
+      "footer footer";
+    grid-template-columns: 1fr 3fr;
+    margin: var(--spacing-large) auto;
+    width: var(--min-width);
+    
+  }
+}
+
 header {
   grid-area: header;
   border-bottom: 1px solid var(--ucla-darker-blue);
+}
+
+.interview img.headshot {
+  grid-column: 1 / -1;
+  width: 100%;
+  object-fit: contain;
 }
 
 main {
