@@ -82,7 +82,7 @@
   /* Brand colors
  // ========================================== */
   --color-text-default: var(--ucla-black-90);
-  --color-background: var(--ucla-darker-blue);
+  --color-background: var(--ucla-white);
 
   /* Border radii
  // ========================================== */
