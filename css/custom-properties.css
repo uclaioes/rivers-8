@@ -104,6 +104,7 @@
 // ========================================== */
 
   --max-width: 90rem;
+  --min-width: 60rem;
   --spacing-xx-small: 0.125rem;
   --spacing-x-small: 0.25rem;
   --spacing-small: 0.5rem;
