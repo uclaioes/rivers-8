@@ -63,7 +63,7 @@ body {
 
 header {
   grid-area: header;
-  border-bottom: 1px solid var(--ucla-darker-blue);
+  border-bottom: 1px solid var(--ucla-darker-gold);
 }
 
 .interview img.headshot {
