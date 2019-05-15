@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: var(--ucla-blue);
+  background-color: var(--color-background);
   color: var(--color-text-default);
   font-family: var(--font-family);
   font-size: var(--text-base-size);
