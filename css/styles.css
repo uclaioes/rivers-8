@@ -158,7 +158,7 @@ nav ul li {
 
 nav .selected {
   font-weight: 700;
-  color: var(--ucla-magenta);
+  color: var(--ucla-darker-blue);
 }
 
 .avatar {
