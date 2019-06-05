@@ -123,6 +123,14 @@ article .standfirst {
 }
 
 
+h3 {
+  font-family: var(--font-family);
+  font-size: var(--font-size-xxx-display);
+  font-weight: var(--font-weight-black);
+  line-height: var(--line-height-heading);
+  text-justify: left;
+}
+
 @media (min-width: 30em) {
   article .standfirst {
     color: var(--ucla-blue);
