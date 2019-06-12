@@ -2,9 +2,8 @@
   /* Typography
 
   // ========================================== */
-  --font-family: Helvetica, sans-serif;
-  --font-family-display: 'Merriweather', serif;
-  --font-family-alt: Futura, Arial, sans-serif;
+  --font-family: aktiv-grotesk, sans-serif;
+  --font-family-display: aktiv-grotesk-condensed, sans-serif;
   --font-weight-thin: 100;
   --font-weight-light: 300;
   --font-weight: 400;
@@ -16,20 +15,20 @@
 
   /* Type scale */
 
-  /* Add values for your typographic hierarchy in em/rem units: */
+  /* Add values for your typographic hierarchy in em/rem units: 1.125 ratio*/
 
   /* Very large sizes */
-  --font-size-xxxx-display: 5.202rem;
-  --font-size-xxx-display: 3.247rem;
-  --font-size-xx-display: 2.887rem;
-  --font-size-x-display: 2.566rem;
-  --font-size-display: 2.281rem;
+  --font-size-xxxx-display: 6.583rem;
+  --font-size-xxx-display: 5.202rem;
+  --font-size-xx-display: 4.11rem;
+  --font-size-x-display: 3.653rem;
+  --font-size-display: 3.247rem;
 
   /* Large sizes */
-  --font-size-xxxx-large: 2.027rem;
-  --font-size-xxx-large: 1.802rem;
-  --font-size-xx-large: 1.602rem;
-  --font-size-x-large: 1.424rem;
+  --font-size-xxxx-large: 2.887rem;
+  --font-size-xxx-large: 2.566rem;
+  --font-size-xx-large: 2.027rem;
+  --font-size-x-large: 1.602rem;
   --font-size-large: 1.266rem;
 
   /* Regular sizes */

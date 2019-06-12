@@ -1,7 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900');
-@import url("https://use.typekit.net/wvc2ysy.css");
+@import url('https://use.typekit.net/iuu6suv.css');
 @import url("custom-properties.css");
 
 html {
@@ -15,9 +13,7 @@ html {
 }
 
 body {
-  /*background-color: var(--ucla-lightest-blue);*/
   background-image: url("../img/back6.jpg");
-  /*text-shadow: 0px 2px 5px rgba(0,0,0,0.4), 0px 16px 20px rgba(0,0,0,0.1), 0px 26px 34px rgba(0,0,0,0.1);*/
   background-size: cover;
   background-position: center;
   color: var(--color-text-default);
@@ -93,48 +89,45 @@ footer {
   grid-area: footer;
 }
 
+h1, h2, h3 {
+  font-family: var(--font-family-display);
+  line-height: var(--line-height-heading);
+  text-transform: uppercase;
+  margin: 0 0 var(--spacing) 0;
+}
+
 h1 {
-  font-family: var(--font-family);
-  font-size: var(--font-size-xxx-display);
-  font-weight: var(--font-weight-black);
-  line-height: var(--line-height-heading);
+  font-size: var(--font-size-xxxx-display);
+  font-weight: var(--font-weight-bold);
 }
 
-header h1 {
-  font-family: var(--font-family);
-  font-size: var(--font-size-xxx-display);
-}
-
-article h2 {
-  font-size: var(--font-size-display);
-  font-weight: var(--font-weight-black);
-  line-height: var(--line-height-heading);
-  margin-bottom: var(--spacing-medium);
+h2 {
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-xx-display);
+  font-weight: var(--font-weight-bold);
   margin-top: var(--spacing-x-large);
 }
 
-section h2 {
-  font-size: var(--font-size-xxx-large);
-  font-weight: var(--font-weight-black);
-}
-
-article .standfirst {
-  font-size: var(--font-size-x-large);
-}
-
-
 h3 {
-  font-family: var(--font-family);
-  font-size: var(--font-size-xxx-display);
-  font-weight: var(--font-weight-black);
-  line-height: var(--line-height-heading);
-  text-justify: left;
+  font-family: var(--font-family-display);
+  font-size: var(--font-size-x-display);
+  font-weight: var(--font-weight-bold);
 }
+
+header h1 {
+  letter-spacing: 10px;
+}
+
+.standfirst {
+  font-size: var(--font-size-x-large);
+  margin-bottom: var(--spacing-x-large);
+}
+
+
 
 @media (min-width: 30em) {
-  article .standfirst {
-    color: var(--ucla-blue);
-    font-size: var(--font-size-x-large);
+  .standfirst {
+    font-size: var(--font-size-xx-large);
     margin: 0;
     padding: 0;
   }
@@ -159,6 +152,23 @@ nav ul li {
 nav .selected {
   font-weight: 700;
   color: var(--ucla-darker-blue);
+}
+
+.marqee {
+  list-style: none;
+  display: flex;
+}
+
+.marqee li {
+  justify-content: space-between;
+  margin: var(--spacing-small);
+  text-align: center;
+}
+
+.marqee ~ span {
+  font-family: var(--font-family-display);
+  font-weight: var(---font-weight-bold);
+
 }
 
 .avatar {
@@ -194,21 +204,20 @@ nav .selected {
 }
 
 .column {
- float: left;
- width: 25%;
- padding: 5px;
+  outline: 2px dotted hotpink;
+  float: left;
+  width: 25%;
+  padding: 5px;
 }
 
 .container1 {
-  width: :1280px;
-  min-height: 900px;
-  margin: 70px auto 0;
-  display: flex;
   align-items: flex-start; 
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex-grow:1;
+  flex-grow: 1;
   justify-content: space-around;
+  margin: 70px auto 0;
 }
 
 .container1 .box{
@@ -216,7 +225,7 @@ nav .selected {
   width:200px;
   height:300px;
   margin: 10px auto 0;
-  box.sizing: border-box;
+  box-sizing: border-box;
   display: inline-block;
 }
 
@@ -233,11 +242,11 @@ nav .selected {
 
 }
 
-.container1 .box:hover .imgBox img{
-  transform:scale(1.2);
+.container1 .box:hover .imgBox img {
+  transform: scale(1.2);
 }
 
-.container1 .box .details{
+.container1 .box .details {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -251,15 +260,17 @@ nav .selected {
 .container1 .box:hover .details{
   transform: scaleY(1);
 }
+
 .container1 .box .details .content {
   position: absolute;
   top: 50%;
-  transform:translateY(-50%);
-  text-align:center;
+  transform: translateY(-50%);
+  text-align: center;
   padding: 15px;
   color: #fff;
 }
-.container1 .box .details .content p{
+
+.container1 .box .details .content p {
   margin: 10px 0 0; 
   padding: 0;
   
