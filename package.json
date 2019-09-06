@@ -1,0 +1,35 @@
+{
+  "name": "rivers-8",
+  "version": "1.0.0",
+  "description": "focus on assessing community perceptions of impacts caused by continuing and future development of the LA River",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uclaioes/rivers-8.git"
+  },
+  "keywords": [
+    "ucla",
+    "los",
+    "angeles",
+    "la",
+    "river",
+    "sustainability",
+    "environmental",
+    "justice"
+  ],
+  "author": "Scott Gruber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uclaioes/rivers-8/issues"
+  },
+  "homepage": "https://github.com/uclaioes/rivers-8#readme",
+  "devDependencies": {
+    "stylelint": "^10.1.0",
+    "stylelint-a11y": "^1.2.1",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-order": "^3.1.0"
+  }
+}
